@@ -10,7 +10,7 @@ stdin.once("data", (username) => {
   username = String(username).trim();
   console.log(chalk.green(`Welcome here, dev ${username} to class!`));
 
-  console.log(chalk.blue(">> How old are you (in years)?"));
+  console.log(chalk.blue(">> How old are you (in years)? dont lie about it"));
 
   stdin.once("data", (age) => {
     age = parseInt(String(age).trim());
