@@ -4,13 +4,13 @@ import checkAge from "./ageCheck.js";
 import { formatUser, getUserStatus } from "./userInfo.js";
 
 console.log(chalk.red("Welcome to the User Info Program!"));
-console.log(chalk.blue(">> What is your name?"));
+console.log(chalk.blue(">> What is your full name?"));
 
 stdin.once("data", (username) => {
   username = String(username).trim();
   console.log(chalk.green(`Welcome here, dev ${username} to class!`));
 
-  console.log(chalk.blue(">> How old are you?"));
+  console.log(chalk.blue(">> How old are you (in years)?"));
 
   stdin.once("data", (age) => {
     age = parseInt(String(age).trim());
