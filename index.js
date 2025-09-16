@@ -8,7 +8,7 @@ console.log(chalk.blue(">> What is your name?"));
 
 stdin.once("data", (username) => {
   username = String(username).trim();
-  console.log(chalk.green(`Welcome here, dev ${username}!`));
+  console.log(chalk.green(`Welcome here, dev ${username} to class!`));
 
   console.log(chalk.blue(">> How old are you?"));
 
